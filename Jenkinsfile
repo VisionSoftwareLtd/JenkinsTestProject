@@ -4,6 +4,9 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Hello world!' 
+                sleep time: 1000, unit: 'MILLISECONDS'
+                input 'Do you want to run main.js?'
+                sh 'node main.js'
             }
         }
     }
