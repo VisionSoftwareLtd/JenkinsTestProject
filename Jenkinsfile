@@ -7,7 +7,7 @@ pipeline {
                 sleep time: 1000, unit: 'MILLISECONDS'
                 input 'Do you want to run main.js?'
                 sh 'node main.js'
-                echo 'Test webhook 3';
+                echo 'Test webhook 4';
             }
         }
     }
